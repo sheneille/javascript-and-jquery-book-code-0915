@@ -1,11 +1,19 @@
 // Create a variable for the subtotal and make a calculation
+var subtotal;
+
  // Subtotal is 70
+subtotal = 70;
 
 // Create a variable for the shipping and make a calculation
+var shipping;
+
 // Shipping is 7
+shipping = 7;
 
 // Create the total by combining the subtotal and shipping values
  // Total is 77
+ var total;
+ total = subtotal + shipping;
 
 // Write the results to the screen
 
