@@ -11,12 +11,18 @@ var shipping;
 shipping = 7;
 
 // Create the total by combining the subtotal and shipping values
- // Total is 77
- var total;
- total = subtotal + shipping;
+// Total is 77
+var total;
+total = subtotal + shipping;
 
 // Write the results to the screen
+var elSubtotal = document.getElementById('subtotal')
+var elShipping = document.getElementById('shipping')
+var elTotal = document.getElementById('total')
 
+elSubtotal.textContent = subtotal
+elShipping.textContent = shipping
+elTotal.textContent = total
 /*
 NOTE: textContent does not work in IE8 or earlier
 You can use innerHTML on lines 12, 15, and 18 but note the security issues on p228-231
