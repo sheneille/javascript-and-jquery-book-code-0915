@@ -1,25 +1,20 @@
-// Set up the object
-var hotel = {
-  name : 'Park',
-  rooms : 120,
-  booked : 77
-};
+// Set up the object hotel - hotel with parameters name, rooms, booked = park, 120, 77
 
-hotel.gym = true;
-hotel.pool = false;
-delete hotel.booked;
+// Set new properties gym and pool and set their value true and false
+
+// Delete property booked
 
 // Update the HTML
-var elName = document.getElementById('hotelName'); // Get element
-elName.textContent = hotel.name;                   // Update HTML with property of the object
+// Get element by ID hotelName
+// Update HTML with property of the object name
 
-var elPool = document.getElementById('pool');      // Get element
-elPool.className = hotel.pool;                     // Update HTML with property of the object
+// Get element with the ID of pool
+// Update HTML with property of the object pool
 
-var elGym = document.getElementById('gym');        // Get element
-elGym.className = hotel.gym;                       // Update HTML with property of the object
+// Get element with the ID of gym
+// Update HTML with property of the object gym
 
-/* 
+/*
 NOTE: textContent does not work in IE8 or earlier
 You can use innerHTML on line 14, but note the security issues on p228-231
 */
