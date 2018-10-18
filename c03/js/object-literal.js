@@ -19,7 +19,7 @@ elName.textContent = hotel.name;
 var elRooms = document.getElementById('rooms');
 
 //var elRooms = document.getElementById('rooms'); // Get element elRooms.textContent = hotel.checkAvailability(); // Update HTML with property of the object
-elRooms.textContent = hotel.rooms;
+elRooms.textContent = hotel.checkAvailability();
 /*
 NOTE: textContent does not work in IE8 or earlier
 You can use innerHTML on lines 13 and 16, but note the security issues on p228-231
