@@ -25,13 +25,13 @@ elName.textContent = park.name;
 var elPool = document.getElementById('pool');
 
 // Update HTML with property of the object pool
-elPool.textContent = 'Pool:' + ' ' + hotel.pool;
+elPool.className = hotel.pool;
 
 // Get element with the ID of gym
 var elName = document.getElementById('gym');
 
 // Update HTML with property of the object gym
-elName.textContent = 'Gym:' + ' ' + hotel.gym;
+elName.className = hotel.gym;
 
 /*
 NOTE: textContent does not work in IE8 or earlier
