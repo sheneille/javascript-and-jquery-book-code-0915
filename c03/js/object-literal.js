@@ -1,12 +1,13 @@
-// Set up the object var hotel = { name : 'Quay', rooms : 40, booked : 25, checkAvailability : function() { return this.rooms - this.booked; // Need "this" because inside function} };
+// Set up the object var hotel = { name : 'Quay', rooms : 40, booked : 25, checkAvailability : function() { return this.rooms - this.booked;} };
 var hotel = {
-  name: 'Quay';
-  rooms: 240;
-  booked: 40;
+  name: 'Quay',
+  rooms: 240,
+  booked: 40,
+  // Need "this" because inside function
   checkAvailability: function(){
     return this.rooms - this.booked;
   }
-}
+};
 
 // Update the HTML var elName = document.getElementById('hotelName');
 var elName = document.getElementById('hotelName');
@@ -15,7 +16,7 @@ var elName = document.getElementById('hotelName');
 elName.textContent = hotel.name;
 
 // Update HTML with property of the object
-var elRooms = document.getElementById('rooms')
+var elRooms = document.getElementById('rooms');
 
 //var elRooms = document.getElementById('rooms'); // Get element elRooms.textContent = hotel.checkAvailability(); // Update HTML with property of the object
 elRooms.textContent = hotel.rooms;
