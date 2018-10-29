@@ -1,11 +1,14 @@
-//var pass = 50;   // Pass markvar score = 90;  // Score// Check if the user has passedvar hasPassed = score >= pass;// Write the message into the pagevar el = document.getElementById('answer');el.innerHTML = 'Level passed: ' + hasPassed;
-
+// Store values for pass and score, 50 and 90 respectively
 var pass = 50;
-
 var score = 90;
 
-var result = score >= pass;
+//Check if the user has passed
 
-var el = document.getElementById('answer');
+var hasPassed = score >= pass;
 
-el.innerHTML = 'Level passed: ' + result;
+// Write the message into the page in id answer
+
+el = document.getElementById('answer');
+
+// Write the element on the page usong innerHTML
+el.innerHTML = 'Level passed: ' + hasPassed;

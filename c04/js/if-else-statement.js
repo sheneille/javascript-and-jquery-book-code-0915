@@ -1,13 +1,6 @@
-var pass = 50;      // Pass mark
-var score = 75;    // Current score
-var msg;            // Message
+// Pass mark  var pass = 50;
+// Current score  var score = 75;
+// Message  var msg;
 
-// Select message to write based on score
-if (score > pass) {
-  msg = 'Congratulations, you passed!';
-} else {
-  msg = 'Have another go!';
-}
-
-var el = document.getElementById('answer');
-el.textContent = msg;
+// Select message to write based on score if (score > pass) {msg = 'Congratulations, you passed!'; } else {msg = 'Have another go!'; }
+//var el = document.getElementById('answer'); el.textContent = msg;
