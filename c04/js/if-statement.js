@@ -1,6 +1,6 @@
-//Store 75 as score and a blank Message
+//Store 75 as score and a Message
 var score = 75;
-var msg = ' ';
+var msg;
 
 //If score is 50 or higher add Congratulations and Proceed to the next round in the message;
 
