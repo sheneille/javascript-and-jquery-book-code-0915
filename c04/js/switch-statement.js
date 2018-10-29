@@ -1,11 +1,23 @@
-//var msg;        // Message var level = 2;  // Level
+//Store message and level in variables
 
-// Determine message based on level switch (level) { case 1: msg = 'Good luck on the first test'; break;
+var msg;
+var level = 2;
 
-//case 2: msg = 'Second of three - keep going!';  break;
+// Determine message based on level
 
-//case 3: msg = 'Final round, almost there!'; break;
+switch (level) {
+  case 1: msg = 'Good luck on the first test';
+  break;
 
-//default: msg = 'Good luck!'; break; }
+  case 2: msg = 'Second of three - keep going!';
+  break;
 
-//var el = document.getElementById('answer'); el.textContent = msg;
+  case 3: msg = 'Final round, almost there!';
+  break;
+
+  default: msg = 'Good luck!';
+  break; }
+
+//Create an element with the id answer
+  var el = document.getElementById('answer');
+  el.textContent = msg;
