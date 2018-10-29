@@ -1,7 +1,20 @@
-//var score = 75;    // Score var msg = '';      // Message
+//Store 75 as score and a Message
+var score = 75;
+var msg = ' ';
 
-//function congratulate() {  msg += 'Congratulations! '; }
+//Create a function to congratulate
 
-//if (score >= 50) {  // If score is 50 or more congratulate(); msg += 'Proceed to the next round.'; }
+function congratulate() {
+  msg += 'Congratulations! ';
+}
 
-//var el = document.getElementById('answer'); el.innerHTML = msg;
+//Check if score is above 50 then run the function Congratulate and add proceed to the next round
+
+if (score >= 50) {
+  congratulate();
+  msg += 'Proceed to the next round.'; }
+
+//Write the element with the id answer
+
+var el = document.getElementById('answer');
+el.innerHTML = msg;
