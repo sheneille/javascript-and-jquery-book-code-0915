@@ -1,8 +1,7 @@
-//var hotItems = document.querySelectorAll('li.hot'); // Store NodeList in array
-//if (hotItems.length > 0) {                          // If it contains items
+var hotItems = document.querySelectorAll('li.hot');
 
-  //for (var i = 0; i < hotItems.length; i++) {       // Loop through each item
-    //hotItems[i].className = 'cool';         // Change value of class attribute
-  //}
-
-//}
+if(hotItems.length > 0){
+  for(i = 0; i < hotItems.length; i++){
+    hotItems[i].className = 'cool';
+  }
+}
