@@ -1,10 +1,19 @@
- // Unit of table   var table = 3;
- // Type of calculation   var operator = 'addition';
- // Set counter to 1    var i = 1;
- // Message   var msg = '';
+ //Create a number on which the operation will be performed
+var number = 3;
+var operator = 'addtion';
+var i;
+var msg = ' ';
 
-//if (operator === 'addition') {
-  // Do addition while (i < 11) { msg += i + ' + ' + table + ' = ' + (i + table) + '<br />'; i++; } } else {
-  // Do multiplication while (i < 11) { msg += i + ' x ' + table + ' = ' + (i * table) + '<br />'; i++; } }
+if(operator === 'addition'){
+  for(i = 0; i < 11; i++){
+    msg += i + ' + ' + number + ' = ' + (i + number) + '<br />';
+  }
+}
+else{
+  for(i = 0; i < 11; i++){
+    msg += i + ' * ' + number + ' = ' + (i * number) + '<br />';
+  }
+}
 
-// Write the message into the page var el = document.getElementById('blackboard'); el.innerHTML = msg;
+var el = document.getElementById('blackboard');
+el.innerHTML = msg;
