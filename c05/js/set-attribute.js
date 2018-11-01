@@ -8,5 +8,5 @@ firstItem.className = 'complete';
 var fourthItem = document.getElementsByTagName('li').item(3);
 
 //note: The following line should say fourthItem (not el2)
- // Add an attribute to it
+// Add an attribute to it
 fourthItem.setAttribute('class', 'cool');
