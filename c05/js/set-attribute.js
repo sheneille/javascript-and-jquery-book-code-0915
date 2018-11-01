@@ -1,6 +1,12 @@
-//var firstItem = document.getElementById('one'); // Get the first item
-//firstItem.className = 'complete';               // Change its class attribute
+// Get the first item
+var firstItem = document.getElementById('one');
 
-//var fourthItem = document.getElementsByTagName('li').item(3);// Get fourth item
+// Change its class attribute
+firstItem.className = 'complete';
+
+// Get fourth item
+var fourthItem = document.getElementsByTagName('li').item(3);
+
 //note: The following line should say fourthItem (not el2)
-//fourthItem.setAttribute('class', 'cool');       // Add an attribute to it
+ // Add an attribute to it
+fourthItem.setAttribute('class', 'cool');
